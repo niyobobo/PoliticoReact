@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
+    "start:heroku": "serve -s dist",
     "test": "jest --coverage",
-    "heroku:start": "node ./dist/index.js",
     "coverage": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/niyobobo/PoliticoReact#readme",
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "serve": "^11.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",

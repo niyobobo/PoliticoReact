@@ -32,6 +32,8 @@ const configuration = {
   ],
   devServer: {
     port: 8000,
+    contentBase: join(__dirname, 'dist'),
+    index: join(__dirname, 'dist'),
   },
 };
 
