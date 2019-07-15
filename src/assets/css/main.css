@@ -1,3 +1,54 @@
-h1 {
-  color:blue;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(235, 233, 233) !important;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.customCard {
+  margin: auto;
+  flex: 1;
+  border-radius: 0 !important;
+  background-color: #f7f8fb;
+}
+
+.customCard img {
+  height: 144px;
+  width: 144px;
+  margin: 0px auto 45px;
+}
+.customCard .error {
+  color: red;
+}
+
+.customCard label {
+  margin: 0;
+}
+
+.customCard input {
+  border-radius: 0;
+}
+
+.customCard button {
+  border: none;
+  border-radius: 0;
+  background-color: #c93096;
+}
+
+.customCard button:hover {
+  background-color: #f11eab;
 }
