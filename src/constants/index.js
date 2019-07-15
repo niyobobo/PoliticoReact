@@ -1,0 +1,1 @@
+export const CUSTOM_AVATAR = "https://niyobobo.github.io/Politico/img/user.png";
