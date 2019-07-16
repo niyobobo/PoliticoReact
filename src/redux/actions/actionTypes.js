@@ -1,7 +1,12 @@
 // Login and Signup action types
-export const LOGIN_REQUEST= "LOGIN_REQUEST";
+export const LOGIN_REQUEST = "LOGIN_REQUEST";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAIL = "LOGIN_FAIL";
 export const SIGNUP_REQUEST = "SIGNUP_REQUEST";
 export const SIGNUP_SUCCESS = "SIGNUP_SUCCESS";
 export const SIGNUP_FAIL = "SIGNUP_FAIL";
+
+// WELCOME PAGE ACTIONS
+export const FETCH_REPOS = "FETCH_REPOS";
+export const FETCH_REPOS_FAIL = "FETCH_REPOS_FAIL";
+export const FETCH_REPOS_SUCCESS = "FETCH_REPOS_SUCCESS";

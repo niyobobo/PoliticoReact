@@ -15,6 +15,12 @@ class Login extends Component {
     passwordError: ''
   }
 
+  componentDidMount() {
+    const { history } = this.props;
+    const { token } = localStorage;
+    if (token) history.push('/welcome');
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
     this.setState({ isLoading: true });
@@ -68,7 +74,7 @@ class Login extends Component {
           <p className="lead small border p-2 text-center">
             Don't have an account?
             {' '}
-            <Link to="/signup" style={{ textDecoration: 'none' }}>Sign up</Link>
+            <Link to="/register" style={{ textDecoration: 'none' }}>Sign up</Link>
           </p>
         </Form>
       </Card>

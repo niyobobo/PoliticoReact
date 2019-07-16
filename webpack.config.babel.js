@@ -37,6 +37,7 @@ const configuration = {
   ],
   devServer: {
     port: 5000,
+    historyApiFallback: true,
   },
 };
 

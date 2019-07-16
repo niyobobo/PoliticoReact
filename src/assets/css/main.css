@@ -19,6 +19,18 @@ body {
   width: 100%;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap !important;
+  align-items: stretch !important;
+}
+
+.repo-card {
+  background: rgb(252, 252, 252);
+  margin: 4px !important;
+  width: 100% !important;
+}
+
 .customCard {
   margin: auto;
   flex: 1;
@@ -31,6 +43,7 @@ body {
   width: 144px;
   margin: 0px auto 45px;
 }
+
 .customCard .error {
   color: red;
 }
@@ -51,4 +64,10 @@ body {
 
 .customCard button:hover {
   background-color: #f11eab;
+}
+
+.btn-logout {
+  width: 100%;
+  padding: 3px 20px !important;
+  text-align: left !important;
 }
