@@ -3,6 +3,9 @@ import {
   LOGIN_REQUEST,
   LOGIN_FAIL,
   LOGIN_SUCCESS,
+  SIGNUP_FAIL,
+  SIGNUP_REQUEST,
+  SIGNUP_SUCCESS,
 } from '../actions/actionTypes';
 
 export default function (state = initialState, action) {
@@ -15,12 +18,25 @@ export default function (state = initialState, action) {
         ...state,
         user: payload
       };
-    case LOGIN_FAIL: {
+    case LOGIN_FAIL: 
       return {
         ...state,
         error: payload
+      };
+    case SIGNUP_REQUEST:
+      return {
+        ...state
+      };
+    case SIGNUP_FAIL:
+      return {
+        ...state,
+        error: payload,
+      };
+    case SIGNUP_SUCCESS:
+      return {
+        ...state,
+        user: payload,
       }
-    }
     default:
       return state;
   }

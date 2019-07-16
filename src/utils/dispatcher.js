@@ -13,3 +13,7 @@ export const axiosConfig = () => {
     },
   }
 };
+
+export const githubConfig = (API_TOKEN) => ({
+  Authorization: API_TOKEN,
+});

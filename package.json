@@ -22,7 +22,6 @@
   "homepage": "https://github.com/niyobobo/PoliticoReact#readme",
   "dependencies": {
     "axios": "^0.19.0",
-    "bootstrap": "^4.3.1",
     "dotenv-webpack": "^1.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

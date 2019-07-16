@@ -10,6 +10,9 @@ const initialState = {
   user: {
     user: {},
   },
+  repository: {
+    repository:[]
+  },
 };
 const mockStore = configureMockStore([thunk]);
 const store = mockStore(initialState);
